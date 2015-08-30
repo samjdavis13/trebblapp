@@ -1,0 +1,23 @@
+$font: "Fira Sans", 'Helvetica', 'Arial', sans-serif;
+$font-size-body: 1.375em;
+$font-size-heading: 3em;
+
+body { font-size: 100%; }
+
+// Make all fonts Fira Sans
+p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
+	font-family: $font;
+}
+
+// Make Default Body Copy 22 points
+p {
+	font-size: $font-size-body;
+}
+
+// Heading Font Sizing
+h1 { font-size: $font-size-heading; }
+h2 { font-size: $font-size-heading * .9; }
+h3 { font-size: $font-size-heading * .8; }
+h4 { font-size: $font-size-heading * .7; }
+h5 { font-size: $font-size-heading * .6; }
+h6 { font-size: $font-size-heading * .5; }

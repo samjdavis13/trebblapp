@@ -124,7 +124,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 62.5rem;
+  max-width: 75rem;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -139,7 +139,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -0.9375rem;
+    margin: 0 -1.875rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -159,8 +159,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   width: 100%;
   float: left; }
 
@@ -272,8 +272,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
   .small-1 {
     width: 8.3333333333%; }
@@ -357,8 +357,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; } }
 
 @media only screen and (min-width: 40.0625em) {
@@ -461,8 +461,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
   .medium-1 {
     width: 8.3333333333%; }
@@ -546,8 +546,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -746,8 +746,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
   .large-1 {
     width: 8.3333333333%; }
@@ -831,8 +831,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -954,7 +954,7 @@ select {
         background: #e3e3e3; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 0.9375rem; }
+      padding: 1.875rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: #FFFFFF;
         display: block; }
@@ -3957,7 +3957,7 @@ button:focus {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -3973,35 +3973,35 @@ button:focus {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 75rem;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -4016,7 +4016,7 @@ button:focus {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 62.5rem;
+        max-width: 75rem;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
@@ -4407,17 +4407,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.9375rem 0;
+    padding: 1.875rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 0.9375rem; }
+      padding: 1.875rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.9375rem; }
+      padding: 0 1.875rem; }
 
 @media only screen and (min-width: 40.0625em) {
   .tabs.vertical {
@@ -4939,7 +4939,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 62.5rem; }
+    max-width: 75rem; }
   .top-bar-section {
     -webkit-transition: none 0 0;
             transition: none 0 0;
@@ -6253,3 +6253,96 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+
+.center-content-vertically, .hero, .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  background: #2A374D;
+  opacity: .3; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
+
+body {
+  font-size: 100%; }
+
+p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", "Helvetica", "Arial", sans-serif; }
+
+p {
+  font-size: 1.375em; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.7em; }
+
+h3 {
+  font-size: 2.4em; }
+
+h4 {
+  font-size: 2.1em; }
+
+h5 {
+  font-size: 1.8em; }
+
+h6 {
+  font-size: 1.5em; }
+
+section {
+  padding: 100px 0; }
+
+html {
+  font-size: 16px; }
+
+.hero {
+  height: 650px;
+  color: white;
+  background-size: cover !important; }
+
+.hero__logo {
+  width: 450px; }
+
+.hero__text {
+  margin-top: 50px;
+  font-style: italic; }
+
+.nav {
+  height: 100px; }
+  .nav ul {
+    margin-top: 20px; }
+  .nav ul li {
+    display: inline-block;
+    padding-left: 100px; }
+  .nav ul li a {
+    font-size: 1.1em;
+    color: #2A374D;
+    opacity: .5;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: .2s opacity ease;
+            transition: .2s opacity ease;
+    line-height: 1; }
+    .nav ul li a:hover {
+      opacity: 1; }
+
+.nav__logo {
+  width: 120px;
+  margin-top: 10px; }

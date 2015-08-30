@@ -1,0 +1,15 @@
+.center-content-vertically {
+	display: flex;
+	align-items: center;
+}
+
+.seperator {
+	width: 100%;
+	height: 1px;
+	background: $navy;
+	opacity: .3;
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }

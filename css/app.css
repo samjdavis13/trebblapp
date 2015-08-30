@@ -124,7 +124,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 90rem;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -3957,7 +3957,7 @@ button:focus {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -3973,35 +3973,35 @@ button:focus {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 75rem;
+      max-width: 90rem;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -4016,7 +4016,7 @@ button:focus {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 75rem;
+        max-width: 90rem;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
@@ -4939,7 +4939,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 75rem; }
+    max-width: 90rem; }
   .top-bar-section {
     -webkit-transition: none 0 0;
             transition: none 0 0;
@@ -6254,7 +6254,7 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-.center-content-vertically, .hero, .nav {
+.center-content-vertically, .hero, .nav, .feed .columns {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6279,14 +6279,33 @@ th.hide-for-touch {
 .center {
   text-align: center; }
 
+.bg-red {
+  background-color: #D8223F; }
+
+.bg-navy {
+  background-color: #2A374D; }
+
 body {
   font-size: 100%; }
 
 p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", "Helvetica", "Arial", sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #2A374D;
+  margin-bottom: 30px; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900; }
+
+h4 {
+  font-weight: 900;
+  font-style: italic; }
+
 p {
-  font-size: 1.375em; }
+  font-size: 1.375em;
+  line-height: 2; }
 
 h1 {
   font-size: 3em; }
@@ -6309,6 +6328,13 @@ h6 {
 section {
   padding: 100px 0; }
 
+.section-icon {
+  margin-bottom: 40px;
+  height: 100px; }
+
+.section-img {
+  height: 500px; }
+
 html {
   font-size: 16px; }
 
@@ -6330,19 +6356,43 @@ html {
     margin-top: 20px; }
   .nav ul li {
     display: inline-block;
-    padding-left: 100px; }
+    padding-left: 75px; }
   .nav ul li a {
     font-size: 1.1em;
     color: #2A374D;
-    opacity: .5;
+    opacity: .66;
     font-weight: 500;
     text-transform: uppercase;
     -webkit-transition: .2s opacity ease;
             transition: .2s opacity ease;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: 3px; }
     .nav ul li a:hover {
       opacity: 1; }
 
 .nav__logo {
   width: 120px;
   margin-top: 10px; }
+
+.about {
+  color: #2A374D; }
+
+.feed h2 {
+  color: white; }
+
+.feed p {
+  color: white; }
+
+.endorsement h2 {
+  color: white; }
+
+.endorsement p {
+  color: white; }
+
+.share h2 {
+  color: white;
+  text-shadow: 0 1px 1px #2A374D; }
+
+.share p {
+  color: white;
+  text-shadow: 0 1px 1px 0 #2A374D; }

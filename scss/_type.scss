@@ -9,9 +9,25 @@ p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
 	font-family: $font;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: $navy;
+	margin-bottom: 30px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h4 {
+	font-weight: 900;
+	font-style: italic;
+}
+
 // Make Default Body Copy 22 points
 p {
 	font-size: $font-size-body;
+	line-height: 2;
 }
 
 // Heading Font Sizing

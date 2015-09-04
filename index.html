@@ -9,28 +9,33 @@
 
         <!-- Fira Sans - Google Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
 
-        <section class="hero text-right" style="background: url(img/hero-bg.jpg)">
+        <!-- Scrollto.js -->
+        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+
+    </head>
+    <body id="page-top">
+
+        <section class="hero" style="background: url(img/hero-bg.jpg)">
             <div class="row">
-                <div class="small-10 small-offset-1 large-8 large-offset-4 columns">
-                    <img class="hero__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt="">
-                    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <div class="small-10 small-offset-1 large-8 large-offset-0 columns">
+                    <a href="#page-top"><img class="hero__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt=""></a>
+                    <p class="hero__text">Opening up the wide and diverse world of music to anyone who is willing to listen</p>
+                    <img class="appstore-icon" src="img/appstore.svg" alt="">
                 </div>
             </div>
         </section>
 
-        <nav class="nav">
+        <nav class="nav" id="about">
             <div class="row">
                 <div class="large-4 columns show-for-large-up">
-                    <img class="nav__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt="">
+                    <a href="#page-top"><img class="nav__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt=""></a>
                 </div>
                 <div class="medium-12 large-8 columns nav-aligner">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#features">Features</a></li>
+                        <li class="nav-item"><a href="#contact">Subscribe</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,19 +51,19 @@
         <section class="about text-center">
             <div class="row">
                 <div class="small-12 medium-10 medium-offset-1 columns">
-                    <h4>Lorem ipsum dolor sit amet</h4>
-                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com-modo consequat.</p>
+                    <h4>What is Trebbl?</h4>
+                    <p>Trebbl does three simple things, extremely well<br>Discover fresh and interesting music by browsing snippets of what your friends are listening to. Share you musical tastes with the world around you. Endorse the music you love so that it can get the recognition it deserves.</p>
                 </div>
             </div>
         </section>
 
-        <section class="feed text-center bg-red">
+        <section class="feed text-center bg-red" id="features">
             <div class="row">
                 <div class="medium-6 columns">
                     <div>
                         <img class="section-icon" data-interchange="[img/discover-icon.png, (default)], [img/discover-icon@2x.png, (retina)]" src="" alt="">
                         <h2>Your Direct Line To New Sounds</h2>
-                        <p class="show-for-large-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aperiam a odit doloribus ducimus nam soluta, debitis fugiat quisquam quaerat.</p>
+                        <p class="show-for-large-up">Discover fresh and interesting music by browsing snippets of what your friends are listening to. Once you've found something you like, simply tap through to listen to the entire song on Apple Music.</p>
                     </div>
                 </div>
                 <div class="medium-6 large-5 large-offset-1 columns">
@@ -72,7 +77,7 @@
                 <div class="medium-6 medium-push-6 columns">
                     <div>
                     <img class="section-icon" data-interchange="[img/endorsement-icon.png, (default)], [img/endorsement-icon@2x.png, (retina)]" src="" alt="">
-                    <h2>Your Direct Line To New Sounds</h2>
+                    <h2>Discover the tastes of those closest to you</h2>
                     <p class="show-for-large-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aperiam a odit doloribus ducimus nam soluta, debitis fugiat quisquam quaerat.</p>
                     </div>
                 </div>
@@ -82,11 +87,11 @@
             </div>
         </section>
 
-        <section class="share text-center" style="background: url(img/share-bg.jpg)">
+        <section class="share text-center" style="background: url(img/share-bg.jpg); background-size: cover;">
             <div class="row">
                 <div class="medium-6 columns">
                     <img class="section-icon" data-interchange="[img/endorsement-icon.png, (default)], [img/share-icon@2x.png, (retina)]" src="" alt="">
-                    <h2>Your Direct Line To New Sounds</h2>
+                    <h2>Share the soundtrack to your life</h2>
                     <p class="show-for-large-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aperiam a odit doloribus ducimus nam soluta, debitis fugiat quisquam quaerat.</p>
                 </div>
                 <div class="medium-6 columns">
@@ -97,31 +102,36 @@
 
         <section class="testimonials text-center">
             <div class="row">
-                <div class="small-12 medium-4 columns">
+                <div class="small-12 columns">
+                    <h4>What people are saying about Trebbl</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 medium-6 large-4 columns">
                     <div class="testimonial">
-                        <img src="img/dp.png" alt="">
-                        <p><span class="username">@samjdavis</span></p>
+                        <img src="https://pbs.twimg.com/profile_images/560012435449319425/wWBClvkN.jpeg" alt="">
+                        <p class="username">@samjdavis</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maiores, sunt vitae, ipsa laborum ratione?</p>
                     </div>
                 </div>
-                <div class="small-12 medium-4 columns">
+                <div class="hide-for-small small-12 medium-6 large-4 columns">
                     <div class="testimonial">
-                        <img src="img/dp.png" alt="">
-                        <p><span class="username">@samjdavis</span></p>
+                        <img src="https://pbs.twimg.com/profile_images/560012435449319425/wWBClvkN.jpeg" alt="">
+                        <p class="username">@samjdavis</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maiores, sunt vitae, ipsa laborum ratione?</p>
                     </div>
                 </div>
-                <div class="hide-for-small small-6 medium-4 columns">
+                <div class="hide-for-medium hide-for-small small-6 large-4 columns">
                     <div class="testimonial">
-                        <img src="img/dp.png" alt="">
-                        <p><span class="username">@samjdavis</span></p>
+                        <img src="https://pbs.twimg.com/profile_images/560012435449319425/wWBClvkN.jpeg" alt="">
+                        <p class="username">@samjdavis</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maiores, sunt vitae, ipsa laborum ratione?</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact bg-navy">
+        <section class="contact bg-navy" id="contact">
             <div class="row">
                 <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
                     <form action="">
@@ -145,13 +155,13 @@
         <footer class="footer nav bg-navy">
             <div class="row">
                 <div class="medium-4 columns">
-                    <img class="footer__logo" data-interchange="[img/footer-logo.png, (default)], [img/footer-logo@2x.png, (retina)]" src="" alt="">
+                    <a href="#page-top"><img class="footer__logo" data-interchange="[img/footer-logo.png, (default)], [img/footer-logo@2x.png, (retina)]" src="" alt=""></a>
                 </div>
                 <div class="medium-8 columns">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#features">Features</a></li>
+                        <li class="nav-item"><a href="#contact">Subscribe</a></li>
                     </ul>
                 </div>
             </div>

@@ -6,6 +6,9 @@
 
 section {
 	padding: 100px 0;
+	@media #{$small-only} {
+		padding: 60px 0;
+	}
 }
 
 .section-icon {
@@ -29,18 +32,19 @@ html { font-size: 16px; }
 	height: 650px;
 
 	@media #{$small-only} {
-		height: 450px;
+		height: 500px;
 	}
 
 	@extend .center-content-vertically;
 	color: white;
 
 	background-size: cover !important;
+	background-position: right !important;
 
 	text-align: center !important;
 
 	@media #{$large-up} {
-		text-align: right !important;
+		text-align: left !important;
 	}
 }
 	
@@ -51,6 +55,10 @@ html { font-size: 16px; }
 	.hero__text {
 		margin-top: 50px;
 		font-style: italic;
+	}
+
+	.appstore-icon {
+		margin-top: 20px;
 	}
 
 
@@ -69,11 +77,8 @@ html { font-size: 16px; }
 }
 
 .nav {
-	// @extend .center-content-vertically;
-	// height: 100px;
 
 	ul {
-		// margin-top: 20px; // offsets the height difference with the logo
 		margin: 0;
 	}
 
@@ -81,6 +86,7 @@ html { font-size: 16px; }
 		display: inline-block;
 
 		padding: 0 15px;
+		
 
 		&:first-child { padding-left: 0; }
 		&:last-child { padding-right: 0; }
@@ -91,7 +97,7 @@ html { font-size: 16px; }
 	}
 
 	ul li a {
-		font-size: 1.1em;
+		font-size: 1em;
 		color: $navy;
 		opacity: .66;
 		font-weight: 500;
@@ -148,10 +154,6 @@ html { font-size: 16px; }
 .endorsement {
 	h2 { color: white; }
 	p {	color: white; }
-
-	.columns {
-		
-	}
 }
 
 
@@ -170,9 +172,34 @@ html { font-size: 16px; }
 		color: white; 
 		text-shadow: 0 1px 1px 0 $navy;
 	}
+}
 
-	.columns {
-		
+
+// ==========================================================
+// ----------------------------------------------------------
+//  TESTIMONIALS
+// ----------------------------------------------------------
+// ==========================================================
+
+.testimonial {
+	border: 1px solid transparentize($charcoal,.5);
+	border-radius: 10px;
+	padding: 40px 30px;
+
+	img {
+		margin-bottom: 10px;
+		width: 120px;
+		border-radius: 120px;
+		border: 1px solid transparentize($charcoal,.5);
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.username {
+		font-weight: 700;
+		margin-bottom: 10px;
 	}
 }
 
@@ -189,12 +216,15 @@ html { font-size: 16px; }
 	@media #{$small-only} {
 		height: 350px;
 	}
+	@media #{$medium-only} {
+		height: 450px;
+	}
 
 	@extend .center-content-vertically;
 
 	background: url("/img/contact-bg.jpg");
 	background-size: cover;
-	background-position: bottom center;
+	background-position: center;
 }
 
 	#email-input {
@@ -249,11 +279,13 @@ html { font-size: 16px; }
 		transition: .2s ease background-color;
 
 		&:hover {
-			background-color: lighten($navy, 3%);
+			background-color: lighten($navy, 5%);
 		}
 
 		// Make text invisible
 		color: rgba(0,0,0,0);
+
+		cursor: pointer;
 	}
 
 // ==========================================================
@@ -279,6 +311,20 @@ html { font-size: 16px; }
 		@media #{$medium-up} {
 			text-align: right;
 		}
+	}
+	ul li {
+		display: inline-block;
+
+		padding: 0 15px;
+		
+
+		&:first-child { padding-left: 0; }
+		&:last-child { padding-right: 0; }
+
+		@media screen and (min-width: 450px) {
+			padding-left: 40px;
+		}
+
 	}
 	ul li a {
 		color: white;

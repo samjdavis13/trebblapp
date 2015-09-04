@@ -1,0 +1,1 @@
+function windowResized(){var e=$(window).width();640>e?$("#email-input").attr("placeholder","Enter email"):$("#email-input").attr("placeholder","Enter your email to be notified when Trebbl is available")}$(document).foundation(),$(function(){windowResized()}),$(window).resize(function(){windowResized()});

@@ -124,7 +124,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 81.25rem;
+  max-width: 90rem;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -3957,7 +3957,7 @@ button:focus {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -3973,35 +3973,35 @@ button:focus {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 81.25rem;
+      max-width: 90rem;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -4016,7 +4016,7 @@ button:focus {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 81.25rem;
+        max-width: 90rem;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
@@ -4939,7 +4939,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 81.25rem; }
+    max-width: 90rem; }
   .top-bar-section {
     -webkit-transition: none 0 0;
             transition: none 0 0;
@@ -6254,7 +6254,7 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-.center-content-vertically, .hero, .feed .columns {
+.center-content-vertically, .hero, .feed .columns, .contact {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6267,7 +6267,7 @@ th.hide-for-touch {
 .seperator {
   width: 100%;
   height: 1px;
-  background: #2A374D;
+  background: #242F42;
   opacity: .3; }
 
 .left {
@@ -6283,7 +6283,13 @@ th.hide-for-touch {
   background-color: #D8223F; }
 
 .bg-navy {
-  background-color: #2A374D; }
+  background-color: #242F42; }
+
+.bg-white {
+  background-color: #fff; }
+
+.text-white {
+  color: white; }
 
 body {
   font-size: 100%; }
@@ -6292,7 +6298,7 @@ p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", "Helvetica", "Arial", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2A374D;
+  color: #242F42;
   margin-bottom: 30px; }
 
 h2 {
@@ -6304,26 +6310,43 @@ h4 {
   font-style: italic; }
 
 p {
-  font-size: 1.375em;
+  font-size: 1.1em;
   line-height: 2; }
+  @media only screen and (min-width: 64.0625em) {
+    p {
+      font-size: 1.375em; } }
 
 h1 {
-  font-size: 3em; }
-
-h2 {
-  font-size: 2.7em; }
-
-h3 {
   font-size: 2.4em; }
 
+h2 {
+  font-size: 2.16em; }
+
+h3 {
+  font-size: 1.92em; }
+
 h4 {
-  font-size: 2.1em; }
+  font-size: 1.68em; }
 
 h5 {
-  font-size: 1.8em; }
+  font-size: 1.44em; }
 
 h6 {
-  font-size: 1.5em; }
+  font-size: 1.2em; }
+
+@media only screen and (min-width: 64.0625em) {
+  h1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 2.7em; }
+  h3 {
+    font-size: 2.4em; }
+  h4 {
+    font-size: 2.1em; }
+  h5 {
+    font-size: 1.8em; }
+  h6 {
+    font-size: 1.5em; } }
 
 section {
   padding: 100px 0; }
@@ -6340,6 +6363,9 @@ html {
   color: white;
   background-size: cover !important;
   text-align: center !important; }
+  @media only screen and (max-width: 40em) {
+    .hero {
+      height: 450px; } }
   @media only screen and (min-width: 64.0625em) {
     .hero {
       text-align: right !important; } }
@@ -6373,7 +6399,7 @@ html {
 
 .nav ul li a {
   font-size: 1.1em;
-  color: #2A374D;
+  color: #242F42;
   opacity: .66;
   font-weight: 500;
   text-transform: uppercase;
@@ -6389,7 +6415,7 @@ html {
   margin-top: 25px; }
 
 .about {
-  color: #2A374D; }
+  color: #242F42; }
 
 .feed h2 {
   color: white; }
@@ -6405,11 +6431,68 @@ html {
 
 .share h2 {
   color: white;
-  text-shadow: 0 1px 1px #2A374D; }
+  text-shadow: 0 1px 1px #242F42; }
 
 .share p {
   color: white;
-  text-shadow: 0 1px 1px 0 #2A374D; }
+  text-shadow: 0 1px 1px 0 #242F42; }
+
+.contact {
+  height: 650px;
+  background: url("/img/contact-bg.jpg");
+  background-size: cover;
+  background-position: bottom center; }
+  @media only screen and (max-width: 40em) {
+    .contact {
+      height: 350px; } }
+
+#email-input {
+  height: 75px;
+  padding-left: 30px;
+  font-family: "Fira Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 10px; }
+  #email-input::-webkit-input-placeholder {
+    color: #242F42;
+    opacity: .5; }
+    @media only screen and (max-width: 40em) {
+      #email-input::-webkit-input-placeholder {
+        content: "Email..."; } }
+  #email-input:-moz-placeholder {
+    color: #242F42;
+    opacity: .5; }
+  #email-input::-moz-placeholder {
+    color: #242F42;
+    opacity: .5; }
+  #email-input:-ms-input-placeholder {
+    color: #242F42;
+    opacity: .5; }
+
+#submit {
+  position: absolute;
+  bottom: 23px;
+  right: 38px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 7px;
+  background-image: url("/img/plane.png");
+  background-size: 37px 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #242F42;
+  -webkit-transition: .2s ease background-color;
+          transition: .2s ease background-color;
+  color: transparent; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    #submit {
+      background-image: url("/img/plane@2x.png");
+      background-size: 37px 34px; } }
+  #submit:hover {
+    background-color: #29364c; }
 
 .footer {
   text-align: left; }

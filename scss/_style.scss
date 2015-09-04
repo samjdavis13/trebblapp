@@ -199,9 +199,25 @@ html { font-size: 16px; }
 
 	.username {
 		font-weight: 700;
-		margin-bottom: 10px;
+		
 	}
+
+	.job-title {
+		font-weight: 200;
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}
+
+
 }
+
+@media #{$small-only} {
+	.testimonial-holder  {
+		margin-bottom: 30px;
+		&:nth-child(2n+2) { margin-bottom: 0 !important; }
+	}	
+}
+
 
 
 // ==========================================================

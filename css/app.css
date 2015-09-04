@@ -6456,8 +6456,17 @@ html {
   .testimonial p {
     margin-bottom: 0; }
   .testimonial .username {
-    font-weight: 700;
-    margin-bottom: 10px; }
+    font-weight: 700; }
+  .testimonial .job-title {
+    font-weight: 200;
+    margin-top: -15px;
+    margin-bottom: 15px; }
+
+@media only screen and (max-width: 40.625em) {
+  .testimonial-holder {
+    margin-bottom: 30px; }
+    .testimonial-holder:nth-child(2n+2) {
+      margin-bottom: 0 !important; } }
 
 .contact {
   height: 650px;

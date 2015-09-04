@@ -6332,9 +6332,6 @@ section {
   margin-bottom: 40px;
   height: 100px; }
 
-.section-img {
-  height: 500px; }
-
 html {
   font-size: 16px; }
 
@@ -6414,13 +6411,23 @@ html {
   color: white;
   text-shadow: 0 1px 1px 0 #2A374D; }
 
-.footer img {
-  width: 120px;
-  margin-top: 10px; }
+.footer {
+  text-align: left; }
+  @media only screen and (max-width: 40em) {
+    .footer {
+      text-align: center; } }
+  .footer img {
+    width: 120px;
+    margin-top: 10px;
+    text-align: center; }
+  .footer ul {
+    text-align: center; }
+    @media only screen and (min-width: 40.0625em) {
+      .footer ul {
+        text-align: right; } }
+  .footer ul li a {
+    color: white;
+    font-size: 1em; }
 
-.footer ul {
-  text-align: right; }
-
-.footer ul li a {
-  color: white;
-  font-size: 1em; }
+.footer__logo {
+  padding-top: 20px; }

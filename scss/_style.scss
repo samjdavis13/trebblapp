@@ -14,7 +14,7 @@ section {
 }
 
 .section-img {
-	height: 500px;
+	// height: 500px;
 }
 
 html { font-size: 16px; }
@@ -179,15 +179,41 @@ html { font-size: 16px; }
 // ==========================================================
 
 .footer {
+	// Aligns logo appropriately
+	text-align: left;
+	@media #{$small-only} {
+		text-align: center;
+	}
 	img {
 		width: 120px;
 		margin-top: 10px;
+		text-align: center;
+		
 	}
 	ul {
-		text-align: right;
+		text-align: center;
+		@media #{$medium-up} {
+			text-align: right;
+		}
 	}
 	ul li a {
 		color: white;
 		font-size: 1em;
 	}
 }
+
+	.footer__logo {
+		padding-top: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+

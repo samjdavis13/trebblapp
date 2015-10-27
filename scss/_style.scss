@@ -32,6 +32,9 @@ html { font-size: 16px; }
 	height: 650px;
 
 	@media #{$small-only} {
+		height: 400px;
+	}
+	@media #{$medium-only} {
 		height: 500px;
 	}
 
@@ -86,13 +89,12 @@ html { font-size: 16px; }
 		display: inline-block;
 
 		padding: 0 15px;
-		
 
 		&:first-child { padding-left: 0; }
 		&:last-child { padding-right: 0; }
 
-		@media screen and (min-width: 450px) {
-			padding-left: 40px;
+		@media screen and (max-width: 800px) {
+			padding-left: 80px;
 		}
 	}
 
@@ -115,6 +117,22 @@ html { font-size: 16px; }
 		width: 120px;
 		margin-top: 25px;
 	}
+
+@media #{$small-only} {
+	.nav {
+		ul {
+			display: flex;
+			justify-content: space-around;
+			li {
+				padding-left: 0;
+				a {
+					font-size: .8em;
+					line-height: 60px;
+				}
+			}
+		}
+	}
+}
 
 
 // ==========================================================

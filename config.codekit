@@ -3668,7 +3668,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 59672,
+		"initialSize": 265723,
 		"inputAbbreviatedPath": "\/img\/feed.png",
 		"outputAbbreviatedPath": "\/img\/feed.png",
 		"outputPathIsOutsideProject": 0,
@@ -3679,7 +3679,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 162399,
+		"initialSize": 787237,
 		"inputAbbreviatedPath": "\/img\/feed@2x.png",
 		"outputAbbreviatedPath": "\/img\/feed@2x.png",
 		"outputPathIsOutsideProject": 0,
@@ -3962,9 +3962,9 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		}
 	},
 "hooks": [

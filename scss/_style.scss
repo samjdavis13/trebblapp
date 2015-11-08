@@ -1,0 +1,383 @@
+// ==========================================================
+// ----------------------------------------------------------
+//  GENERAL
+// ----------------------------------------------------------
+// ==========================================================
+
+section {
+	padding: 100px 0;
+	@media #{$small-only} {
+		padding: 60px 0;
+	}
+}
+
+.section-icon {
+	margin-bottom: 40px;
+	height: 100px;
+}
+
+.section-img {
+	// height: 500px;
+}
+
+html { font-size: 16px; }
+
+// ==========================================================
+// ----------------------------------------------------------
+//  HERO SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.hero {
+	height: 650px;
+
+	@media #{$small-only} {
+		height: 400px;
+	}
+	@media #{$medium-only} {
+		height: 500px;
+	}
+
+	@extend .center-content-vertically;
+	color: white;
+
+	background-size: cover !important;
+	background-position: right !important;
+
+	text-align: center !important;
+
+	@media #{$large-up} {
+		text-align: left !important;
+	}
+}
+	
+	.hero__logo {
+		width: 450px;
+	}
+
+	.hero__text {
+		margin-top: 50px;
+		font-style: italic;
+	}
+
+	.appstore-icon {
+		margin-top: 20px;
+	}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  NAV SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.nav-aligner {
+	text-align: center;
+
+	@media #{$large-up} {
+		text-align: right;
+	}
+}
+
+.nav {
+
+	ul {
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+
+		padding: 0 15px;
+
+		&:first-child { padding-left: 0; }
+		&:last-child { padding-right: 0; }
+
+		@media screen and (max-width: 800px) {
+			padding-left: 80px;
+		}
+	}
+
+	ul li a {
+		font-size: 1em;
+		color: $navy;
+		opacity: .66;
+		font-weight: 500;
+		text-transform: uppercase;
+		transition: .2s opacity ease;
+		line-height: 100px;
+		letter-spacing: 3px;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+	.nav__logo {
+		width: 120px;
+		margin-top: 25px;
+	}
+
+@media #{$small-only} {
+	.nav {
+		ul {
+			display: flex;
+			justify-content: space-around;
+			li {
+				padding-left: 0;
+				a {
+					font-size: .8em;
+					line-height: 60px;
+				}
+			}
+		}
+	}
+}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  ABOUT SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.about  {
+	color: $navy;
+}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  FEED SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.feed {
+	h2 { color: white; }
+	p {	color: white; }
+
+	.columns {
+		
+		@extend .center-content-vertically;
+	}
+}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  ENDORSEMENT SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.endorsement {
+	h2 { color: white; }
+	p {	color: white; }
+}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  SHARE SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.share {
+	h2 { 
+		color: white; 
+		text-shadow: 0 1px 1px $navy;
+	}
+	p {	
+		color: white; 
+		text-shadow: 0 1px 1px 0 $navy;
+	}
+}
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  TESTIMONIALS
+// ----------------------------------------------------------
+// ==========================================================
+
+.testimonial {
+	border: 1px solid transparentize($charcoal,.5);
+	border-radius: 10px;
+	padding: 40px 30px;
+
+	img {
+		margin-bottom: 10px;
+		width: 120px;
+		border-radius: 120px;
+		border: 1px solid transparentize($charcoal,.5);
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.username {
+		font-weight: 700;
+		
+	}
+
+	.job-title {
+		font-weight: 200;
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}
+
+
+}
+
+@media #{$small-only} {
+	.testimonial-holder  {
+		margin-bottom: 30px;
+		&:nth-child(2n+2) { margin-bottom: 0 !important; }
+	}	
+}
+
+
+
+// ==========================================================
+// ----------------------------------------------------------
+//  CONTACT SECTION
+// ----------------------------------------------------------
+// ==========================================================
+
+.contact {
+	height: 650px;
+
+	@media #{$small-only} {
+		height: 350px;
+	}
+	@media #{$medium-only} {
+		height: 450px;
+	}
+
+	@extend .center-content-vertically;
+
+	background: url("/img/contact-bg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+	#email-input {
+		height: 75px;
+		padding-left: 30px;
+		font-family: $font;
+		font-weight: 500;
+		font-size: 18px;
+
+		background: rgba(255,255,255,.6);
+		border: none;
+		border-radius: 10px;
+
+		// Placeholder styling
+		&::-webkit-input-placeholder {
+			color: $navy;
+			opacity: .5;
+			@media #{$small-only} { content: "Email..."; }
+		}	
+		&:-moz-placeholder {
+			color: $navy;
+			opacity: .5;
+		}	
+		&::-moz-placeholder {
+			color: $navy;
+			opacity: .5;
+		}	
+		&:-ms-input-placeholder {
+			color: $navy;
+			opacity: .5;
+		}	
+	}
+
+	#submit {
+		position: absolute;
+		bottom: 23px;
+		right: 38px;
+
+		height: 60px;
+		width: 60px;
+
+		border: none;
+		border-radius: 7px;
+
+		background-image: url("/img/plane.png");
+		background-size: 37px 34px;
+		@media #{$retina} { background-image: url("/img/plane@2x.png"); background-size: 37px 34px;}
+		background-repeat: no-repeat;
+		background-position: center;
+
+		background-color: $navy;
+		transition: .2s ease background-color;
+
+		&:hover {
+			background-color: lighten($navy, 5%);
+		}
+
+		// Make text invisible
+		color: rgba(0,0,0,0);
+
+		cursor: pointer;
+	}
+
+// ==========================================================
+// ----------------------------------------------------------
+//  FOOTER
+// ----------------------------------------------------------
+// ==========================================================
+
+.footer {
+	// Aligns logo appropriately
+	text-align: left;
+	@media #{$small-only} {
+		text-align: center;
+	}
+	img {
+		width: 120px;
+		margin-top: 10px;
+		text-align: center;
+		
+	}
+	ul {
+		text-align: center;
+		@media #{$medium-up} {
+			text-align: right;
+		}
+	}
+	ul li {
+		display: inline-block;
+
+		padding: 0 15px;
+		
+
+		&:first-child { padding-left: 0; }
+		&:last-child { padding-right: 0; }
+
+		@media screen and (min-width: 450px) {
+			padding-left: 40px;
+		}
+
+	}
+	ul li a {
+		color: white;
+		font-size: 1em;
+	}
+}
+
+	.footer__logo {
+		padding-top: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+

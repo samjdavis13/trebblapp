@@ -3,13 +3,178 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trebbl</title>
+        <title>Trebbl | An App for Music Discovery</title>
         <link rel="stylesheet" href="css/app.css" />
-        <script src="bower_components/modernizr/modernizr.js"></script>
-    </head>
-    <body>
 
-        
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+        <!-- Fira Sans - Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+        <!-- Scrollto.js -->
+        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    </head>
+    <body id="page-top">
+
+        <section class="hero" style="background: url(img/hero-bg.jpg)">
+            <div class="row">
+                <div class="small-10 small-offset-1 large-10 large-offset-1 xlarge-12 xlarge-offset-0 columns">
+                    <a href="#page-top"><img class="hero__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt=""></a>
+                    <p class="hero__text">Opening the wide and diverse world of music to anyone who is willing to listen.</p>
+                    <a href="https://app.pixate.com/p4f7fae2295a8" target="_blank"><img class="appstore-icon" src="img/appstore.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <nav class="nav" id="about">
+            <div class="row">
+                <div class="large-4 columns show-for-large-up">
+                    <a href="#page-top"><img class="nav__logo" data-interchange="[img/top-logo.png, (default)], [img/top-logo@2x.png, (retina)]" src="" alt=""></a>
+                </div>
+                <div class="medium-12 large-8 columns nav-aligner">
+                    <ul>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#features">Features</a></li>
+                        <li class="nav-item"><a href="#contact">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Seperator -->
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="seperator"></div>        
+            </div>
+        </div>
+
+        <section class="about text-center">
+            <div class="row">
+                <div class="small-12 medium-10 medium-offset-1 columns">
+                    <h4>What is Trebbl?</h4>
+                    <p>Trebbl does three simple things, extremely well.<br>Discover fresh and interesting music by browsing snippets of what your friends are listening to. Share your musical tastes with the world around you. Endorse the music you love so that it can get the recognition it deserves.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feed text-center bg-red" id="features">
+            <div class="row">
+                <div class="medium-6 columns">
+                    <div>
+                        <img class="section-icon" data-interchange="[img/discover-icon.png, (default)], [img/discover-icon@2x.png, (retina)]" src="" alt="">
+                        <h2>Your Direct Line To New Sounds</h2>
+                        <p class="show-for-large-up">Discover fresh and interesting music by browsing snippets of what your friends are listening to. Once you've found something you like, simply tap through to listen to the entire song on Apple Music.</p>
+                    </div>
+                </div>
+                <div class="medium-6 large-5 large-offset-1 columns">
+                    <img class="section-img" data-interchange="[img/feed.png, (default)], [img/feed@2x.png, (retina)]" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="endorsement text-center bg-navy">
+            <div class="row">
+                <div class="medium-6 medium-push-6 columns">
+                    <div>
+                    <img class="section-icon" data-interchange="[img/endorsement-icon.png, (default)], [img/endorsement-icon@2x.png, (retina)]" src="" alt="">
+                    <h2>Discover the tastes of those closest to you</h2>
+                    <p class="show-for-large-up">Endorse the music you love so that it can get the recognition it deserves. Browse this section of the app to find real time charts that have been curated by your friends and loved ones.</p>
+                    </div>
+                </div>
+                <div class="medium-6 medium-pull-6 columns">
+                    <img class="section-img" data-interchange="[img/endorsement.png, (default)], [img/endorsement@2x.png, (retina)]" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="share text-center" style="background: url(img/share-bg.jpg); background-size: cover;">
+            <div class="row">
+                <div class="medium-6 columns">
+                    <img class="section-icon" data-interchange="[img/endorsement-icon.png, (default)], [img/share-icon@2x.png, (retina)]" src="" alt="">
+                    <h2>Share the soundtrack to your life</h2>
+                    <p class="show-for-large-up">Share you musical tastes with the world around you. Select a portion of any song (up to 15 seconds) then post it into the world, where it can receive likes, comments and endorsements.</p>
+                </div>
+                <div class="medium-6 columns">
+                    <img class="section-img" data-interchange="[img/share.png, (default)], [img/share@2x.png, (retina)]" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials text-center">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h4>What people are saying about Trebbl</h4>
+                </div>
+            </div>
+            <div class="row" data-equalizer="endorsements">
+                <div class="testimonial-holder small-12 medium-6 large-4 columns">
+                    <div class="testimonial" data-equalizer-watch="endorsements">
+                        <img src="https://pbs.twimg.com/profile_images/378800000483764274/ebce94fb34c055f3dc238627a576d251_400x400.jpeg" alt="">
+                        <p class="username">Tim Cook</p>
+                        <p class="job-title">CEO Apple Inc</p>
+                        <p>Trebbl is an app that I can really see revolutionising the music industry, like iTunes all over again. </p>
+                    </div>
+                </div>
+                <div class="testimonial-holder small-12 medium-6 large-4 columns">
+                    <div class="testimonial" data-equalizer-watch="endorsements">
+                        <img src="https://pbs.twimg.com/profile_images/3065313266/7d563f0c22918aba2d6be2eaa9fb92a7_400x400.png" alt="">
+                        <p class="username">John Gruber</p>
+                        <p class="job-title">Technology Journalist</p>
+                        <p>This app looks fantastic, I appreciate that the typeface used includes real smallcaps.</p>
+                    </div>
+                </div>
+                <div class="testimonial-holder hide-for-medium hide-for-small small-6 large-4 columns">
+                    <div class="testimonial" data-equalizer-watch="endorsements">
+                        <img src="https://pbs.twimg.com/profile_images/1282173124/untitled-158-2_400x400.jpg" alt="">
+                        <p class="username">Marco Arment</p>
+                        <p class="job-title">Devout Phish Fan</p>
+                        <p>Good app: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><br> would be 5 stars, but needs more Phish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact bg-navy" id="contact">
+            <div class="row">
+                <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+                    <form action="http://samjdavis.com/trebbl-contact/" method="post">
+                        <h5 class="text-white text-center show-for-small">Enter your email to be notified when Trebbl is available</h5>
+                        <input id="email-input" type="email" placeholder="Enter your email to be notified when Trebbl is available" name="email">
+                        <input id="submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seperator -->
+        <div class="seperator-wrapper bg-navy">
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="seperator bg-white"></div>        
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer nav bg-navy">
+            <div class="row">
+                <div class="medium-4 columns">
+                    <a href="#page-top"><img class="footer__logo" data-interchange="[img/footer-logo.png, (default)], [img/footer-logo@2x.png, (retina)]" src="" alt=""></a>
+                </div>
+                <div class="medium-8 columns">
+                    <ul>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#features">Features</a></li>
+                        <li class="nav-item"><a href="#contact">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/foundation/js/foundation.min.js"></script>

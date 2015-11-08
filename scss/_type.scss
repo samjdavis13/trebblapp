@@ -1,0 +1,54 @@
+$font: "Fira Sans", 'Helvetica', 'Arial', sans-serif;
+$font-size-body: 1.2em;
+$font-size-heading: 2.8em;
+$font-size-body-mobile: $font-size-body * .8;
+$font-size-heading-mobile: $font-size-heading * .8;
+
+body { font-size: 100%; }
+
+// Make all fonts Fira Sans
+p, ul, li, ol, a, h1, h2, h3, h4, h5, h6 {
+	font-family: $font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $navy;
+	margin-bottom: 30px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h4 {
+	font-weight: 900;
+	font-style: italic;
+}
+
+// Make Default Body Copy 22 points
+p {
+	font-size: $font-size-body-mobile;
+	line-height: 2;
+	
+	@media #{$large-up} {
+		font-size: $font-size-body;
+	}
+}
+
+// Heading Font Sizing
+h1 { font-size: $font-size-heading-mobile; }
+h2 { font-size: $font-size-heading-mobile * .9; }
+h3 { font-size: $font-size-heading-mobile * .8; }
+h4 { font-size: $font-size-heading-mobile * .7; }
+h5 { font-size: $font-size-heading-mobile * .6; }
+h6 { font-size: $font-size-heading-mobile * .5; }
+
+@media #{$large-up} {
+	h1 { font-size: $font-size-heading; }
+	h2 { font-size: $font-size-heading * .9; }
+	h3 { font-size: $font-size-heading * .8; }
+	h4 { font-size: $font-size-heading * .7; }
+	h5 { font-size: $font-size-heading * .6; }
+	h6 { font-size: $font-size-heading * .5; }
+}

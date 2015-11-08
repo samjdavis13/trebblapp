@@ -1,11 +1,15 @@
+@import "vars";
+
 // System Imports
 @import "settings";
 @import "foundation";
 
 // User Imports
-@import "vars";
+
 @import "atoms";
+@import "type";
 @import "style";
+
 
 // Or selectively include components
 // @import

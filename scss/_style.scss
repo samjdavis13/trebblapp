@@ -371,13 +371,18 @@ html { font-size: 16px; }
 	}
 
 
+.play-button {
+	color: $red;
+	font-size: 100px !important;
+	&:hover {
+		cursor: pointer;
+		color: lighten($red,15%);
+	}
+}
 
-
-
-
-
-
-
-
-
-
+section.video {
+	padding: 350px 0;
+	@media screen and (max-width: $medium-breakpoint) {
+		padding: 150px 0;
+	}
+}

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="Description" content="Trebbl does three simple things, extremely well. Discover fresh and interesting music by browsing snippets of what your friends are listening to. Share your musical tastes with the world around you. Endorse the music you love so that it can get the recognition it deserves.">
         <title>Trebbl | An App for Music Discovery</title>
         <link rel="stylesheet" href="css/app.css" />
 
@@ -21,6 +22,13 @@
 
     </head>
     <body id="page-top">
+
+        <div id="videoModal" class="reveal-modal xlarge" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+            <div class="flex-video widescreen vimeo">
+                <iframe src="https://www.youtube.com/embed/lH1yIkreBNU" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
 
         <section class="hero" style="background: url(img/hero-bg.jpg)">
             <div class="row">
@@ -59,6 +67,15 @@
                 <div class="small-12 medium-10 medium-offset-1 columns">
                     <h4>What is Trebbl?</h4>
                     <p>Trebbl does three simple things, extremely well.<br>Discover fresh and interesting music by browsing snippets of what your friends are listening to. Share your musical tastes with the world around you. Endorse the music you love so that it can get the recognition it deserves.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="video bg-navy" style="background-image: url('img/video-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="row text-center">
+                <div class="small-12 columns">
+                    <a href="#" data-reveal-id="videoModal"><i class="fa fa-play-circle-o fa-5x play-button"></i></a>
                 </div>
             </div>
         </section>

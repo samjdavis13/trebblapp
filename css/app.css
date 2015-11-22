@@ -6955,3 +6955,16 @@ html {
 
 .footer__logo {
   padding-top: 20px; }
+
+.play-button {
+  color: #D8223F;
+  font-size: 100px !important; }
+  .play-button:hover {
+    cursor: pointer;
+    color: #e66076; }
+
+section.video {
+  padding: 350px 0; }
+  @media screen and (max-width: 63.9375em) {
+    section.video {
+      padding: 150px 0; } }
